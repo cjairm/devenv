@@ -1,0 +1,47 @@
+# ZSH Configuration File
+#
+# This file contains custom configuration settings and customizations for the
+# ZSH shell. It is sourced automatically when ZSH starts up.
+#
+# To customize your ZSH configuration, you can copy this content into 
+# `~/.config/zsh/` directly 
+#
+# For more information, see the official ZSH documentation:
+#   https://zsh.sourceforge.io
+#
+# To apply changes, save `~/.config/zsh/` and run:
+#   source ~/.zshrc
+
+alias zshconf="nvim ~/.zshrc"
+alias ohmyzshconf="nvim ~/.oh-my-zsh"
+alias yabaiconf="nvim ~/.config/yabai/yabairc"
+alias skhdrcconf="nvim ~/.config/skhd/skhdrc"
+alias tmuxconf="nvim ~/.tmux.conf"
+alias nvimconf="nvim ~/.config/nvim/init.lua"
+alias nvim_sf="fd --type f --hidden --exclude .git | fzf-tmux -p  --reverse | xargs nvim"
+alias tmclear="clear && tmux clear-history && clear"
+alias go-init="touch main.go && go mod init example/any && go mod tidy"
+alias laravel-cli="/Users/jair.mendez/Documents/workspace/go/laravel-cli/laravel-cli"
+
+export GOPATH=$HOME/Documents/workspace/go
+export PATH="$PATH:$GOPATH/bin"
+
+# Personal
+alias tmhadamenu="tmn hadamenu -c ~/Documents/projects/hadamenu/code"
+alias tmpi="tmn pi -c ~/Documents/projects/raspberry_pi/"
+alias tmhadaelectronics="tmn hadaelectronics -c ~/Documents/projects/hadaelectronics/code"
+alias tmgo="tmn go -c ~/Documents/workspace/go"
+alias tmcjairm="tmn cjairm -c ~/Documents/projects/cjairm.github.io/code"
+alias tmpython="tmn python -c ~/Documents/workspace/python"
+
+# Git
+# alias clean-branch="git checkout main && git pull origin main && git fetch && git remote prune origin && git branch -D"
+# alias fresh-install="git clean -Xfd && lrenpm"
+# alias fresh-compile="git clean -Xf && npm run clean"
+# alias updated-compile="fresh-compile && npm update --no-save"
+#
+# Kubernetes
+# alias k-set="unset AWS_VAULT && aws-vault exec eks-engineer --"
+# alias k-context="kubectl config use-context"
+# alias k-list="kubectl get pods -l"
+# alias k-follow="kubectl logs --follow"
