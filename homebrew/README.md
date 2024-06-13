@@ -15,3 +15,10 @@ To install Homebrew, simply run the following command in your terminal:
 This will download and install Homebrew on your system, giving you access to a vast library of packages and tools.
 
 With Homebrew, you'll be able to easily install and manage packages, making it easier to develop, work, and play on your Mac.
+
+- If already installed make sure you update packages
+``` bash
+brew outdated
+brew upgrade
+brew cleanup
+```

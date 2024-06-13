@@ -2,16 +2,25 @@
 
 ### Instllation
 - [Simple hotkey daemon for macOS](https://github.com/koekeishiya/skhd)
-```
+``` bash
 brew install koekeishiya/formulae/skhd
 ```
 
 - Where to put the config file?
-```
+``` bash
 touch ~/.config/skhd/skhdrc
 chmod +x ~/.config/skhd/skhdrc
 ```
 - [Check configuration file here](https://github.com/cjairm/mac_conf/blob/main/skhdrc)
+
+- If issues, please reinstall it
+``` bash
+skhd --stop-service
+brew uninstall --force skhd
+ls /opt/homebrew/bin/s*  # check there's no skhd binary
+rm /Users/james/Library/LaunchAgents/com.koekeishiya.skhd.plist 
+rm /Users/james/Library/Caches/Homebrew/downloads/*skhd*.zip
+```
 
 ### some extra help if needed
 https://www.youtube.com/watch?v=k94qImbFKWE

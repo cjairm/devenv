@@ -16,14 +16,14 @@ By providing both automated and manual configuration options, this documentation
 
 This is the setup guide for configuring the development environment on a Mac running Ventura. It provides step-by-step instructions for initializing the development environment, including any necessary software installations and configuration settings.
 
-1. [Install Raycast](file:///raycast)
-1. [Install Homebrew](file:///homebrew)
-1. [Install iTerm2](file:///homebrew)
-1. [Enhancing the ZSH Experience with Oh My ZSH](file:///oh_my_zsh)
-1. [Terminal themes](file:///themes)
-1. [Ripgrep](file:///ripgrep)
-1. [Nvim](file:///nvim)
-1. [Tmux](file:///tmux)
+1. [Install Raycast](https://github.com/cjairm/devenv/tree/main/raycast)
+1. [Install Homebrew](https://github.com/cjairm/devenv/tree/main/homebrew)
+1. [Install iTerm2](https://github.com/cjairm/devenv/tree/main/iterm2)
+1. [Enhancing the ZSH Experience with Oh My ZSH](https://github.com/cjairm/devenv/tree/main/oh_my_zsh)
+1. [Terminal themes](https://github.com/cjairm/devenv/tree/main/themes)
+1. [Ripgrep](https://github.com/cjairm/devenv/tree/main/ripgrep)
+1. [Nvim](https://github.com/cjairm/devenv/tree/main/nvim)
+1. [Tmux](https://github.com/cjairm/devenv/tree/main/tmux)
 
 ## Features
 
