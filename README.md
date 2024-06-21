@@ -25,6 +25,8 @@ This is the setup guide for configuring the development environment on a Mac run
 1. [Nvim](https://github.com/cjairm/devenv/tree/main/nvim)
 1. [Tmux](https://github.com/cjairm/devenv/tree/main/tmux)
 
+Note. (Optional) [Copilot CLI](https://github.com/cjairm/devenv/tree/main/cli/copilot)
+
 ## Features
 
 - **Configures zsh**: This command configures the ZSH shell by adding custom configuration settings and customizations, such as aliases and exports. The command can be safely executed multiple times, as it includes checks to prevent duplication. This means that if you run the command multiple times with the same alias or export, it will not create multiple entries for the same setting. This makes it easy to add and modify your ZSH customizations without worrying about duplicates or conflicts.
