@@ -45,3 +45,6 @@ alias tmpython="tmn python -c ~/Documents/workspace/python"
 # alias k-context="kubectl config use-context"
 # alias k-list="kubectl get pods -l"
 # alias k-follow="kubectl logs --follow"
+#
+# Copilot
+# alias "??"="gh copilot explain"
