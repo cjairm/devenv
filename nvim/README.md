@@ -137,3 +137,16 @@ return {
 ```
 
 </details>
+
+## Note
+If you want to add copilot ([docs for neovim](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-code-suggestions-in-your-editor?tool=vimneovim) and [tutorial here](https://www.youtube.com/watch?v=c9y7bKk-R7U))
+```lua
+  -- Copilot
+  {
+    'github/copilot.vim',
+  },
+```
+- [Create PR summaries](https://www.youtube.com/watch?v=LlKjlaHGMr4)
+- [Use natural language](https://www.youtube.com/watch?v=ZDbk5M4hbEI)
+- [Using GitHub Copilot Chat in your IDE](https://docs.github.com/en/copilot/github-copilot-chat/copilot-chat-in-ides/using-github-copilot-chat-in-your-ide)
+- [Creating a pull request summary with GitHub Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/github-copilot-enterprise/copilot-pull-request-summaries/creating-a-pull-request-summary-with-github-copilot)
