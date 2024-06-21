@@ -14,3 +14,8 @@ github-copilot-cli auth
 eval "$(github-copilot-cli alias -- "$0")"
 # Don't forget to source file
 ```
+
+There are 2 different CLIs (see this comment: https://github.com/orgs/community/discussions/75367#discussioncomment-8242181)
+
+For organizations the one is: https://docs.github.com/en/copilot/github-copilot-in-the-cli/using-github-copilot-in-the-cli
+- [Installation](https://docs.github.com/en/copilot/github-copilot-in-the-cli/installing-github-copilot-in-the-cli)
