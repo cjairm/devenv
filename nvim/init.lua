@@ -961,9 +961,9 @@ require('lazy').setup({
     },
   },
 
-  { -- Copilot
-    'github/copilot.vim',
-  },
+  -- { -- Copilot
+  --   'github/copilot.vim',
+  -- },
   -- ***
 }, {
   ui = {
