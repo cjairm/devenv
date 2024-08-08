@@ -23,3 +23,34 @@ rg cjairm .
 ```
 
 Overall, ripgrep is a fast and powerful search tool that can help you find what you're looking for quickly and efficiently. By combining it with other tools, such as fd and fzf, you can create even more powerful aliases and customizations for your development environment.
+
+### Useful commands
+```bash
+rg '// TODO' -C 2
+
+rg calledWith -g "*Test.ts"
+
+rg promisedRun -g '!*Test.ts'
+
+rg -l '// TODO' --sort path
+
+rg --files-without-match '\b(var|let|const)\b'
+
+# Fixed strings
+rg -F '?.'
+
+# After context
+rg '// TODO' -A 3
+
+# Search specific files
+rg -t js '@format'
+
+# get only files
+rg -l '// TODO'
+
+# GET ONLY FOLDERS
+rg profiles_sensitive -g '!acl' -g '!collections' | sed 's#/.*##' | sort -u
+
+# COUNT CONCURRENCES
+rg profiles_sensitive | grep -c ‘profiles_sensitive’
+```
