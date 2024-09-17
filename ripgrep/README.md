@@ -53,4 +53,20 @@ rg profiles_sensitive -g '!acl' -g '!collections' | sed 's#/.*##' | sort -u
 
 # COUNT CONCURRENCES
 rg profiles_sensitive | grep -c ‘profiles_sensitive’
+
+# SEARCHES FILES
+rg --pcre2 -zl '(?s)<a.*?target="_blank"(?!.*noopener noreferrer).*?>'
+
+Here's how it works:
+
+--pcre2 enables the PCRE2 regex engine, which supports look-around assertions.
+-zl tells rg to search for patterns that span multiple lines (-z) and to output the matching lines (-l).
+(?s)<a.*?target="_blank"(?!.*noopener noreferrer).*?> is the regex pattern:
+  (?s) enables dotall mode, which allows the dot (.) to match newline characters.
+  <a.*?target="_blank" matches the opening <a tag and any characters (including newlines) until it finds target="_blank".
+  (?!.*noopener noreferrer) is a negative lookahead assertion that ensures the link does not have rel="noopener noreferrer".
+  .*?> matches any remaining characters until the closing > of the <a> tag.
+
+This command will search for links with target="_blank" but without rel="noopener noreferrer" across multiple lines in the current directory (.).
+
 ```
